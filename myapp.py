@@ -24,12 +24,10 @@ map = st.Page(
 
 # st.title('Reqest manager')
 
-pg = st.navigation([
-    howami, 
-    page_color_choice,
-    dashboard,
-    map
-])
+pg = st.navigation({
+    '': [howami],
+    'Projects' : [page_color_choice, dashboard, map]
+})
 
 pg.run()
 
